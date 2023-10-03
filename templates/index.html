@@ -1,0 +1,48 @@
+{% extends "_layout" %}
+
+{% block main %}
+<div class="cart-modal-overlay">
+    <div class="cart-modal">
+      <i id="close-btn" class="fas fa-times"></i>
+        <h1 class="cart-is-empty">Cart is empty</h1>
+      
+        <div class="product-rows">
+        </div>
+        
+      </div>
+</div>
+
+
+<div class="tm-main-content">
+    <section class="tm-margin-b-l">
+        <header>
+            <div class="d-flex align-items-center justify-content-between">
+                <h2 class="tm-main-title mb-0">Welcome to our bookstore</h2>    
+                <div class="cart-btn">
+                    <i id="cart" class="fas fa-shopping-cart"></i>
+                    <span class="cart-quantity">0</span>
+                </div>
+            </div>
+        </header>
+        {% set books = craft.bookshelf.getAllBooks() %}
+                           
+        <div class="tm-gallery">
+            <div class="row">
+                {% for book in books %}
+                    <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                        <div class="tm-gallery-item-overlay">
+                            <img src="img/image-01.jpg" alt="Image" class="img-fluid tm-img-center">
+                        </div>
+                        <div class="tm-book-details">
+                            <p class="tm-figcaption box book-title-{{book.id}}">{{ book.title }}</p>
+                            <i class="tm-wishlist fas fa-heart box book-{{book.id}}" data-id="{{ book.id }}"></i>
+                        </div>
+                    </figure>
+                {% endfor %}                             
+            </div>   
+        </div>
+    </section>
+
+</div>
+
+{% endblock %}
