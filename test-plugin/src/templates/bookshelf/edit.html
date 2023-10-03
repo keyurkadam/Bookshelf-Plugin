@@ -1,0 +1,64 @@
+
+{% extends "_layouts/CP" %}
+
+{% set title = "Edit Book" %}
+
+{% block content %}
+
+    <div class="cp-section">
+
+        <h1>Edit Book</h1>
+
+        <form method="POST" enctype="multipart/form-data">
+            {{ csrfInput() }}
+            {{ actionInput('_test-plugin/book/edit') }}
+            <input type="hidden" name="id" value="{{ book.id }}">
+
+            <div class="field">
+                <label for="title">Title</label>
+                <input type="text" id="title" class="text fullwidth" name="title" value="{{ book.title }}" required>
+            </div>
+
+            <div class="field">
+                <label for="author">Author</label>
+                <input type="text" id="author" class="text fullwidth" value="{{ book.author }}" name="author">
+            </div>
+            
+            <div class="field">
+                <label for="genre">Genre</label>
+                <input type="text" id="genre" class="text fullwidth" value="{{ book.genre }}" name="genre">
+            </div>
+            
+            <div class="field">
+                <label for="publicationYear">Publication Year</label>
+                <input type="number" id="publicationYear" class="text fullwidth" value="{{ book.publicationYear }}" name="publicationYear" required>
+            </div>
+            
+            <div class="field">
+                <label for="coverImage">Cover Image</label>
+                <input type="file" id="coverImage" class=" fullwidth" name="coverImage"  required>
+            </div>
+
+            <div class="field">
+                <label for="description">description</label>
+                <input type="text" id="description" class="text fullwidth" name="description" value="{{ book.description }}" required>
+            </div>
+
+            <div class="buttons">
+                <button type="submit" class="btn submit">Save</button>
+            </div>
+
+
+            
+
+            
+
+            
+
+            <!-- Add more input fields as needed for your book details -->
+
+           
+        </form>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,49 @@
+
+{% extends "_layouts/CP" %}
+
+{% set title = "Bookshelf" %}
+
+{% block actionButton %}
+    <div class="buttons">
+        <a class="btn submit add icon" href="bookshelf/book/add">
+            Add a Book
+        </a>
+    </div>
+{% endblock %}
+
+{% block content %}
+
+<div class="cp-section">
+    <h1>Book Collection</h1>
+
+    <table class="data fullwidth">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Publication Year</th>
+                <th>Cover Image</th>
+                <th>Description</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in books %}
+            {% set editUrl = url('bookshelf/book/edit', { 'bookId': book.id }) %}
+                <tr>
+                    <td>{{ book.title }}</td>
+                    <td>{{ book.author }}</td>
+                    <td>{{ book.genre }}</td>
+                    <td>{{ book.publicationYear }}</td>
+                    <td>{{ book.coverImage }}</td>
+                    <td>{{ book.description }}</td>
+                    <td><a href="bookshelf/book/edit/{{book.id}}">Edit</a> / <a href="bookshelf/book/delete/{{book.id}}">Delete</a></td>
+                    
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}
