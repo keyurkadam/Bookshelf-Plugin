@@ -24,7 +24,7 @@ To install the Bookshelf plugin, follow these steps:
 
 1. Clone the plugin repository to your Craft CMS project's `plugins` directory:
    ```
-   git clone https://github.com/your/repository.git craft/plugins/test-plugin
+   git clone [https://github.com/your/repository.git](https://github.com/keyurkadam/Bookshelf-Plugin/) craft/plugins/test-plugin
    ```
 
 2. In the Craft CMS control panel, navigate to **Settings > Plugins**.
@@ -66,22 +66,22 @@ To install the Bookshelf plugin, follow these steps:
 
 ## Screenshots
 
-![Screenshot 1](screenshots/screenshot1.png)
+![Screenshot 1](https://github.com/keyurkadam/Bookshelf-Plugin/blob/3cf3a71bd42f1565c0ef4e0214eac23acefaab28/Bookshelf%20Home%20Front-End.png)
 *Screenshot 1: Bookshelf Home Front-End*
 
-![Screenshot 2](screenshots/screenshot2.png)
+![Screenshot 2](https://github.com/keyurkadam/Bookshelf-Plugin/blob/3cf3a71bd42f1565c0ef4e0214eac23acefaab28/Adding%20a%20Book%20Front-End.png)
 *Screenshot 2: Adding a Book Front-End*
 
-![Screenshot 3](screenshots/screenshot3.png)
+![Screenshot 3](https://github.com/keyurkadam/Bookshelf-Plugin/blob/3cf3a71bd42f1565c0ef4e0214eac23acefaab28/Viewing%20a%20Book%20List%20Control%20Panel.png)
 *Screenshot 3: Viewing a Book List Control Panel*
 
-![Screenshot 4](screenshots/screenshot3.png)
+![Screenshot 4](https://github.com/keyurkadam/Bookshelf-Plugin/blob/main/Adding%20a%20Book%20Control%20Panel.png)
 *Screenshot 4: Adding a Book Control Panel*
 
-![Screenshot 5](screenshots/screenshot3.png)
+![Screenshot 5](https://github.com/keyurkadam/Bookshelf-Plugin/blob/3cf3a71bd42f1565c0ef4e0214eac23acefaab28/Editing%20a%20Book%20Control%20Panel.png)
 *Screenshot 5: Editing a Book Control Panel*
 
-![Screenshot 6](screenshots/screenshot3.png)
+![Screenshot 6](https://github.com/keyurkadam/Bookshelf-Plugin/blob/3cf3a71bd42f1565c0ef4e0214eac23acefaab28/Viewing%20a%20WIshlist%20Front-End.png)
 *Screenshot 6: Viewing a WIshlist Front-End*
 
 ## Technical Details
